@@ -2,8 +2,17 @@
 
 n, k = gets.split(' ').map &:to_i
 
-def josephus(n, k)
-  (n == 1) ? 1 : (josephus(n - 1, k) + k - 1) % n + 1
+people = (1..n).to_a
+i = 0
+
+until people.length == 1
+  if (i + 1) % k == 0
+    people.shift
+  else
+    people.push people.shift
+  end
+  
+  i += 1
 end
 
-puts josephus(n, k)
+pp people[0]
