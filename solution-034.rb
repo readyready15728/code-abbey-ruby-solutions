@@ -1,14 +1,13 @@
 #!/usr/bin/env ruby
 
 gets
-parameter_list = readlines.map { |line| line.split(' ').map &:to_f }
+parameters = readlines.map { |line| line.split(' ').map &:to_f }
 
 def expression(a, b, c, d, x)
   a * x + b * x**1.5 - c * Math.exp(-x / 50) - d
 end
 
-puts (parameter_list.map do |parameters|
-  a, b, c, d = parameters
+puts (parameters.map do |a, b, c, d|
   low, high = 0.to_f, 100.to_f
   epsilon = 1e-7
 
