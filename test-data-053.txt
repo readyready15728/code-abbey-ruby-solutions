@@ -1,0 +1,23 @@
+22
+f8 e2
+f8 e2
+f6 h6
+e2 f4
+e3 e8
+d8 a8
+g7 h4
+g2 f4
+b3 e8
+b2 a8
+g1 f4
+c4 g8
+f3 g2
+b8 b1
+f2 d4
+d2 h5
+d5 e6
+f5 e4
+f2 g8
+e6 g3
+a6 d2
+e6 c2
